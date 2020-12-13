@@ -1,0 +1,6 @@
+framework module Pods_TrafficImages_TrafficImagesUITests {
+  umbrella header "Pods-TrafficImages-TrafficImagesUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
