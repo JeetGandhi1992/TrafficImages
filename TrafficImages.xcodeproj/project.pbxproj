@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1648E26C7FF138E9A6165FDB /* Pods_TrafficImages_TrafficImagesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFFA551B2F3C361147462864 /* Pods_TrafficImages_TrafficImagesUITests.framework */; };
+		4601CBB12587154700071A95 /* CameraPositionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4601CBAD2587154700071A95 /* CameraPositionFactory.swift */; };
+		4601CBB22587154700071A95 /* FakeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4601CBAE2587154700071A95 /* FakeProvider.swift */; };
+		4601CBB32587154700071A95 /* ObservableHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4601CBAF2587154700071A95 /* ObservableHelpers.swift */; };
+		4601CBBF258716C500071A95 /* MainMapViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4601CBBE258716C500071A95 /* MainMapViewModelSpec.swift */; };
 		468CAF602585F90B00D5C4DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468CAF5F2585F90B00D5C4DF /* AppDelegate.swift */; };
 		468CAF672585F90B00D5C4DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 468CAF652585F90B00D5C4DF /* Main.storyboard */; };
 		468CAF692585F90C00D5C4DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 468CAF682585F90C00D5C4DF /* Assets.xcassets */; };
@@ -54,6 +58,10 @@
 
 /* Begin PBXFileReference section */
 		2497E893240FBEDC877752D4 /* Pods_TrafficImagesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrafficImagesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4601CBAD2587154700071A95 /* CameraPositionFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraPositionFactory.swift; sourceTree = "<group>"; };
+		4601CBAE2587154700071A95 /* FakeProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeProvider.swift; sourceTree = "<group>"; };
+		4601CBAF2587154700071A95 /* ObservableHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservableHelpers.swift; sourceTree = "<group>"; };
+		4601CBBE258716C500071A95 /* MainMapViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMapViewModelSpec.swift; sourceTree = "<group>"; };
 		468CAF5C2585F90B00D5C4DF /* TrafficImages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrafficImages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		468CAF5F2585F90B00D5C4DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		468CAF662585F90B00D5C4DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -131,6 +139,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4601CBAC2587154700071A95 /* Test Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4601CBAD2587154700071A95 /* CameraPositionFactory.swift */,
+				4601CBAE2587154700071A95 /* FakeProvider.swift */,
+				4601CBAF2587154700071A95 /* ObservableHelpers.swift */,
+			);
+			path = "Test Helpers";
+			sourceTree = "<group>";
+		};
 		468CAF532585F90A00D5C4DF = {
 			isa = PBXGroup;
 			children = (
@@ -171,8 +189,10 @@
 		468CAF752585F90D00D5C4DF /* TrafficImagesTests */ = {
 			isa = PBXGroup;
 			children = (
+				4601CBAC2587154700071A95 /* Test Helpers */,
 				468CAF762585F90D00D5C4DF /* TrafficImagesTests.swift */,
 				468CAF782585F90D00D5C4DF /* Info.plist */,
+				4601CBBE258716C500071A95 /* MainMapViewModelSpec.swift */,
 			);
 			path = TrafficImagesTests;
 			sourceTree = "<group>";
@@ -307,6 +327,7 @@
 				468CAF6E2585F90D00D5C4DF /* Sources */,
 				468CAF6F2585F90D00D5C4DF /* Frameworks */,
 				468CAF702585F90D00D5C4DF /* Resources */,
+				9D0F74115A579CBFB6723C03 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -508,6 +529,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TrafficImages-TrafficImagesUITests/Pods-TrafficImages-TrafficImagesUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9D0F74115A579CBFB6723C03 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrafficImagesTests/Pods-TrafficImagesTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrafficImagesTests/Pods-TrafficImagesTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TrafficImagesTests/Pods-TrafficImagesTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -541,6 +579,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				468CAF772585F90D00D5C4DF /* TrafficImagesTests.swift in Sources */,
+				4601CBB12587154700071A95 /* CameraPositionFactory.swift in Sources */,
+				4601CBB32587154700071A95 /* ObservableHelpers.swift in Sources */,
+				4601CBB22587154700071A95 /* FakeProvider.swift in Sources */,
+				4601CBBF258716C500071A95 /* MainMapViewModelSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

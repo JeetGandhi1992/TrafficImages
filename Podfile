@@ -18,6 +18,12 @@ target 'TrafficImages' do
   target 'TrafficImagesTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'Quick'
+    pod 'Nimble'
+    pod 'RxBlocking'
+    pod 'RxTest'
+    pod 'OHHTTPStubs/Swift'
+    pod 'RxDataSources'
   end
 
   target 'TrafficImagesUITests' do

@@ -92,8 +92,8 @@ class MainMapViewModel: MainMapViewModelType {
             .disposed(by: disposeBag)
     }
 
-    public func shouldRefreshAnnotations() -> Bool {
-        let differenceInSeconds = Date().timeIntervalSince(timeStamp)
+    public func shouldRefreshAnnotations(date: Date = Date()) -> Bool {
+        let differenceInSeconds = date.timeIntervalSince(timeStamp)
         return differenceInSeconds >= 20
     }
 

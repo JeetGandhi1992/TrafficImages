@@ -7,7 +7,35 @@
 		<key>TrafficImages.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>13</integer>
+			<integer>18</integer>
+		</dict>
+		<key>TrafficImagesTests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>19</integer>
+		</dict>
+		<key>TrafficImagesUITests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>20</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>468CAF5B2585F90B00D5C4DF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>468CAF712585F90D00D5C4DF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>468CAF7C2585F90D00D5C4DF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
